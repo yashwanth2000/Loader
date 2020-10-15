@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div > div {
+    width: 2vw;
+    height: 2vw;
+    margin: 1vw;
+    border-radius: 25%;
+    animation:  bounce 2.5s .2s linear infinite;
+}
+
+.yellow{
+    background-color: #feb60a;
+}
+
+.red {
+    background-color: #ff0062;
+}
+
+.green {
+    background-color: #10AD00;
+}
+
+.blue {
+    background-color: #004ae3;
+}
+
+@keyframes bounce {
+    0%, 50%, 10% {
+        transform: scale(0.7);
+        transform: rotate(360deg);
+    }
+    25% {
+        transform: scale(0.6);
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+        transform: scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: scale(0.7);
+    }
+}
